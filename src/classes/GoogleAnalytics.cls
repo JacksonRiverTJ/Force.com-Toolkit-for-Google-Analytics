@@ -272,7 +272,7 @@ public with sharing class GoogleAnalytics {
 		    '&end-date=' + GoogleAnalytics.formatDate(endDate) +
 		    '&dimensions=' + join(dimensions, ',') + 
 		    '&metrics=' + join(metrics, ',') + 
-		    '&filters=' + filter +
+		    // '&filters=' + filter + commenting out since this is causing errors on import from Google
 		    '&prettyprint=true' +
 		    '&ids=' + id;
 	    if (maxResults != null) {
